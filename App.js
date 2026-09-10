@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { View, ActivityIndicator, StyleSheet } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useEffect, useState } from 'react';
+import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
-import Login from './src/pantallas/Login';
-import Menu from './src/pantallas/Menu';
 import Catalogo from './src/pantallas/Catalogo';
 import Historial from './src/pantallas/Historial';
+import Login from './src/pantallas/Login';
+import Menu from './src/pantallas/Menu';
+import Orden from './src/pantallas/Orden';
 import { colores } from './src/theme/theme';
 
 const Stack = createNativeStackNavigator();
@@ -62,6 +63,7 @@ export default function App() {
           options={{ title: 'MENÚ', headerBackVisible: false }}
         />
         <Stack.Screen name="Catalogo" component={Catalogo} options={{ title: 'CATÁLOGO' }} />
+        <Stack.Screen name="Orden" component={Orden} options={{ title: 'RESUMEN DE ORDEN' }} />
         <Stack.Screen name="Historial" component={Historial} options={{ title: 'HISTORIAL' }} />
       </Stack.Navigator>
     </NavigationContainer>
