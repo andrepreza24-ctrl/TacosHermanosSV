@@ -1,17 +1,7 @@
-import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  StyleSheet,
-  KeyboardAvoidingView,
-  Platform,
-  ScrollView,
-} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { colores, tipografia, espaciado } from '../theme/theme';
-
+import { useState } from 'react';
+import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { colores, espaciado, tipografia } from '../theme/theme';
 // Para los usuarios locales, valida el acceso
 const USUARIOS_VALIDOS = [
   { usuario: 'cliente', contrasena: 'tacos123' },
