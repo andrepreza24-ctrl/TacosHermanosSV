@@ -84,7 +84,7 @@ export default function Orden({ route, navigation }) {
     } else {
       Alert.alert(
         'Confirmar Pedido',
-        `¿Desea procesar su compra por un total de $${total.toFixed(2)}?`,
+        `¿Su compra es por un total de $${total.toFixed(2)}?`,
         [
           { text: 'Cancelar', style: 'cancel' },
           { text: 'Confirmar', onPress: guardarYFinalizar },

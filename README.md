@@ -1,6 +1,68 @@
-# Welcome to your Expo app 👋
+# TacosHermanosSV - Segundo Desafio Práctico
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Desafío:** Segundo Desafio Práctico  
+**Estudiante:** Andre Emanuel Preza Deras
+**Carnet:** PD230540
+
+---
+
+## Video de
+
+> **Enlace al video:**
+
+---
+
+## Descripción del Proyecto
+
+Aplicación móvil desarrollada en **React Native** con **Expo** para la gestión de pedidos, catálogo de productos y seguimiento de compras en el restaurante **Tacos Hermanos SV**.
+
+La aplicación cumple con el almacenamiento local persistente mediante `AsyncStorage` y la navegación Stack de `React Navigation`.
+
+---
+
+## Funcionalidades
+
+- **Autenticación Local:** Pantalla de Login con credenciales almacenadas localmente y persistencia de sesión.
+- **Menú Principal:** Navegación centralizada hacia las diferentes secciones de la app.
+- **Catálogo de Alimentos y Bebidas:**
+  - Separación visual por categorías.
+  - Más de 10 alimentos y 5 bebidas con imagen, nombre y precio unitario fijo.
+  - Selector de cantidad por producto.
+- **Pantalla de Orden:**
+  - Resumen detallado con subtotal por producto y subtotal general.
+  - Cálculo automático del 13% de IVA y total final.
+  - Diálogo de confirmación previo al envío de la orden.
+- **Historial de Pedidos:**
+  - Almacenamiento persistente en `AsyncStorage` bajo la clave `'historialOrdenes'`.
+  - Visualización de órdenes confirmadas (ID, fecha/hora, ítems y total).
+  - Opción de vaciado/limpieza del historial.
+
+---
+
+## Credenciales de Prueba
+
+| Usuario         | Contraseña | Rol           |
+| :-------------- | :--------- | :------------ |
+| `tacoshermanos` | `admin`    | Administrador |
+
+---
+
+## Tecnologías Utilizadas
+
+- **Framework:** React Native (Expo SDK)
+- **Navegación:** `@react-navigation/native` & `@react-navigation/stack`
+- **Persistencia:** `@react-native-async-storage/async-storage`
+- **IDE & Entorno:** Visual Studio Code / Android Studio (Emulador Pixel 6a)
+
+---
+
+## Instalación y Ejecución Local
+
+1. **Clonar el repositorio:**
+
+   ```bash
+   https://github.com/andrepreza24-ctrl/TacosHermanosSV.git
+   ```
 
 ## Get started
 
@@ -22,35 +84,3 @@ In the output, you'll find options to open the app in a
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
