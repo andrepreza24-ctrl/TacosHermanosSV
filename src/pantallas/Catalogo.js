@@ -115,7 +115,7 @@ export default function Catalogo({ navigation }) {
           onPress={() => setCategoriaActiva('alimentos')}
         >
           <Text style={[styles.tabTexto, categoriaActiva === 'alimentos' && styles.tabTextoActivo]}>
-            Alimentos
+            Platos fuertes
           </Text>
         </TouchableOpacity>
 

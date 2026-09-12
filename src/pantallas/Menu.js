@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { colores, tipografia, espaciado } from '../theme/theme';
+import { useEffect, useState } from 'react';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { colores, espaciado, tipografia } from '../theme/theme';
 
 const OPCIONES = [
   {
     id: 'Catalogo',
-    titulo: 'Catálogo',
+    titulo: 'Catálogo / Menú',
     descripcion: 'Elige tus alimentos y bebidas',
     color: colores.acento,
   },
@@ -47,6 +47,7 @@ export default function Menu({ route, navigation }) {
   return (
     <View style={styles.contenedor}>
       <View style={styles.encabezado}>
+        <Text style={styles.mensajeBienvenida}>Welcome to the los Tacos Hermanos Family!</Text>
         <Text style={tipografia.etiqueta}>HOLA</Text>
         <Text style={styles.saludo}>{usuario || 'invitado'}</Text>
       </View>
@@ -73,8 +74,11 @@ export default function Menu({ route, navigation }) {
 }
 
 const styles = StyleSheet.create({
-  contenedor: { flex: 1, backgroundColor: colores.verde, padding: espaciado.lg },
-  encabezado: { marginTop: espaciado.lg, marginBottom: espaciado.xl },
+  contenedor: { flex: 1,
+     backgroundColor: colores.verde, 
+    padding: espaciado.lg },
+  encabezado: { 
+    marginBottom: espaciado.xs },
   saludo: {
     ...tipografia.marca,
     fontSize: 26,
@@ -106,4 +110,10 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     letterSpacing: 0.5,
   },
+  mensajeBienvenida: {
+  color: colores.acento,
+  fontSize: 30,
+  fontWeight: '900',
+  marginBottom: espaciado.xs,
+},
 });

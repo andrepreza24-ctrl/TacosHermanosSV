@@ -102,9 +102,9 @@ export const PRODUCTOS = [
   },
   {
     id: 'b5',
-    nombre: 'c',
+    nombre: 'Jugos Naturales',
     precio: 2.00,
     categoria: 'bebidas',
-    imagen: 'https://res.cloudinary.com/dh81vvqax/image/upload/v1789061545/Refresco_embotellado_athuwm.webp',
+    imagen: 'https://res.cloudinary.com/dh81vvqax/image/upload/v1789061543/Jugo_Natural_de_Naranja_wnv6kx.jpg',
   },
 ];

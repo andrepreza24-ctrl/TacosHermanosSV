@@ -4,8 +4,8 @@ import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, TextInput
 import { colores, espaciado, tipografia } from '../theme/theme';
 // Para los usuarios locales, valida el acceso
 const USUARIOS_VALIDOS = [
-  { usuario: 'cliente', contrasena: 'tacos123' },
-  { usuario: 'admin', contrasena: 'admin123' },
+  { usuario: 'tacoshermanos', contrasena: 'tacoshermanos' },
+  { usuario: 'tacoshermanos', contrasena: 'admin' },
 ];
 
 export default function Login({ navigation }) {
@@ -51,7 +51,7 @@ export default function Login({ navigation }) {
         <View style={styles.marca}>
           <Text style={styles.marcaTitulo}>TACOS{'\n'}HERMANOS</Text>
           <View style={styles.marcaLinea} />
-          <Text style={tipografia.subtituloMarca}>EST. 2021</Text>
+          <Text style={tipografia.subtituloMarca}>Somos una familia</Text>
         </View>
 
         <View style={styles.formulario}>
@@ -94,7 +94,7 @@ export default function Login({ navigation }) {
             <Text style={styles.botonTexto}>Ingresar</Text>
           </TouchableOpacity>
 
-          <Text style={styles.ayuda}>Usuario de prueba: cliente / tacos123</Text>
+          <Text style={styles.ayuda}>Credenciales -- usuario: tacoshermanos  pass: admin</Text>
         </View>
       </ScrollView>
     </KeyboardAvoidingView>

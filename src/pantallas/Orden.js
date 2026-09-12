@@ -108,7 +108,7 @@ export default function Orden({ route, navigation }) {
 
   return (
     <View style={styles.contenedor}>
-      <Text style={styles.titulo}>RESUMEN DE ORDEN</Text>
+      <Text style={styles.titulo}>Resumen</Text>
 
       {itemsSeleccionados.length === 0 ? (
         <View style={styles.vacioContenedor}>
