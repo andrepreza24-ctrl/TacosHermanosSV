@@ -4,7 +4,6 @@ import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, TextInput
 import { colores, espaciado, tipografia } from '../theme/theme';
 // Para los usuarios locales, valida el acceso
 const USUARIOS_VALIDOS = [
-  { usuario: 'tacoshermanos', contrasena: 'tacoshermanos' },
   { usuario: 'tacoshermanos', contrasena: 'admin' },
 ];
 
